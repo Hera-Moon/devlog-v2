@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <>
               <Script
                 strategy="afterInteractive"
-                src="https://www.googletagmanager.com/gtag/js?id=G-7GJZ6E40WG"
+                src="https://www.googletagmanager.com/gtag/js?id=G-EZVPV49ZQK"
               />
               <Script
                 id="google-analytics"
@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
                 
-                  gtag('config', 'G-7GJZ6E40WG');
+                  gtag('config', 'G-EZVPV49ZQK');
                 `
                 }}
               />
