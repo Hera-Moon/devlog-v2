@@ -48,7 +48,7 @@ export default function PostPage({ id, data }: IPostPageProps) {
         title={title?.title[0].plain_text}
         description={subTitle?.rich_text[0].plain_text}
         openGraph={{
-          url: `https://byseop.com/post/@${id}`,
+          url: `https://hyezzang.com/post/@${id}`,
           title: title?.title[0].plain_text,
           description: subTitle?.rich_text[0].plain_text,
           images: [
@@ -61,11 +61,11 @@ export default function PostPage({ id, data }: IPostPageProps) {
               type: 'image/png'
             }
           ],
-          siteName: 'byseop devlog'
+          siteName: 'hyezzang devlog'
         }}
         twitter={{
-          handle: 'byseop',
-          site: `https://byseop.com/post/@${id}`,
+          handle: 'hyezzang',
+          site: `https://hyezzang.com/post/@${id}`,
           cardType: 'summary_large_image'
         }}
       />

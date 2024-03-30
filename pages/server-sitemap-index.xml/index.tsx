@@ -8,7 +8,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     const res = await postApis.getPosts();
     return getServerSideSitemapIndex(
       context,
-      res.data.map((page) => `https://byseop.com/posts/@${page.id}`)
+      res.data.map((page) => `https://hyezzang.com/posts/@${page.id}`)
     );
   } catch (e) {
     console.error(e);
