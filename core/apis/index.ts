@@ -5,7 +5,7 @@ import type { Response } from '@interfaces/index';
 export const api: AxiosInstance = axios.create({
   baseURL:
     process.env.NEXT_PUBLIC_APP_ENV === 'production'
-      ? 'https://byseop.com/api'
+      ? `${process.env.PRODUCTION_URL}/api`
       : 'http://localhost:3000/api',
   headers: {
     'Content-Type': 'application/json',
