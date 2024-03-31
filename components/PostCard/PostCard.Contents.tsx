@@ -57,12 +57,12 @@ const PostCard: React.FC<IPostCardProps> = ({ data, className, lastRef }) => {
           )}
           {title && (
             <div className="title">
-              <p>{title.title[0].plain_text}</p>
+              <p>{title.title[0]?.plain_text}</p>
             </div>
           )}
           {subTitle && (
             <div className="sub-title">
-              <p>{subTitle.rich_text[0].plain_text}</p>
+              <p>{subTitle.rich_text[0]?.plain_text}</p>
             </div>
           )}
           {publishDate && (
