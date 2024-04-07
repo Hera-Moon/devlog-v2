@@ -67,7 +67,7 @@ const Post: React.FC<IPostProps> = ({ id, data, className }) => {
         {title && (
           <div className="post-title-wrap">
             <h1>{title.title[0].plain_text}</h1>
-            {subTitle && <h2>{subTitle.rich_text[0]?..plain_text}</h2>}
+            {subTitle && <h2>{subTitle.rich_text[0]?.plain_text}</h2>}
           </div>
         )}
       </div>
